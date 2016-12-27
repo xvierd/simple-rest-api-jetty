@@ -46,5 +46,6 @@ public class Main {
     private static void initConfigServer() throws ExampleException {
         ResourceBundle resourceBundle = ResourceBundle.getBundle(
                 "config");
+        PORT = Integer.parseInt(resourceBundle.getString("PORT"));
     }
 }
